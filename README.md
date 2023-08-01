@@ -1,6 +1,6 @@
 # ghpages-vue3
 
-This template should help get you started developing with Vue 3 in Vite.
+Vue 3 demo project for deployment flow with GitHub Actions (CI/CD) using gh-pages.
 
 ## Recommended IDE Setup
 
