@@ -2,9 +2,8 @@
   "name": "ghpages-vue3",
   "version": "0.0.0",
   "private": true,
-  "homepage": "http://JamesHust.github.io/ghpages-vue3",
+  "homepage": "https://JamesHust.github.io/ghpages-vue3",
   "scripts": {
-    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "run-p type-check build-only",
     "preview": "vite preview",
@@ -12,6 +11,7 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "pinia": "^2.1.4",
