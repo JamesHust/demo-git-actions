@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    name: Build App
+    name: Build app
     runs-on: ubuntu-latest
 
     steps:
@@ -36,7 +36,7 @@ jobs:
           path: ./dist
 
   deploy:
-    name: Deploy App
+    name: Deploy app
     needs: build
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
