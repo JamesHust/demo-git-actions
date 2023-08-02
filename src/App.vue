@@ -5,7 +5,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Avatar" class="logo" src="@/assets/img/avatar.png" style="height: 420px" />
+    <img alt="Avatar" class="logo" src="@/assets/img/avatar.png" />
 
     <div class="wrapper">
       <HelloWorld msg="Hi, I'm The Hung" />
@@ -29,6 +29,9 @@ header {
 .logo {
   display: block;
   margin: 0 auto 2rem;
+  height: 220px;
+  border-radius: 5px;
+  border: 2px solid hsla(160, 100%, 37%, 1);
 }
 
 nav {
