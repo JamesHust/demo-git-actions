@@ -5,7 +5,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Avatar" class="logo" src="@/assets/img/avatar.png" width="125" height="125" />
+    <img alt="Avatar" class="logo" src="@/assets/img/avatar.png" style="height: 420px" />
 
     <div class="wrapper">
       <HelloWorld msg="Hi, I'm The Hung" />

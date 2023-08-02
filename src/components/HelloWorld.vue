@@ -9,7 +9,7 @@ defineProps<{
     <h1 class="green">{{ msg }}</h1>
     <h3>
       I am Full-stack Developer. More information:
-      <a href="https://github.com/JamesHust" target="_blank" rel="noopener">https://github.com/JamesHust</a> +
+      <a href="https://github.com/JamesHust" target="_blank" rel="noopener">https://github.com/JamesHust</a>
     </h3>
   </div>
 </template>
