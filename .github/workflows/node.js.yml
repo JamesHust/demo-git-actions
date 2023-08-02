@@ -43,26 +43,13 @@ jobs:
 
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: production-files
           path: ./dist
 
       - name: Deploy to GitHub Pages
-        uses: appleboy/scp-action@master
-        env:
-          HOST: ${{ secrets.SSH_HOST }}
-          USERNAME: ${{ secrets.SSH_USER }}
-          POST: 22
-          KEY: ${{ secrets.SSH_PRIVATE_KEY }} 
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          source: "dist"
-          strip components: 1
-          target: "var/www/elancer.ps/"
-          
-#         uses: peaceiris/actions-gh-pages@d38d8b34e3c4631f1ebfec2a11dafd7761e48e98
-#         with:
-#           github_token: ${{ secrets.GITHUB_TOKEN }}
-#           publish_dir: ./
-#           allow_empty_commit: true
-#           force_orphan: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
