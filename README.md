@@ -1,4 +1,4 @@
-# ghpages-vue3
+# Demo GitHub Actions
 
 Vue 3 demo project for deployment flow with GitHub Actions (CI/CD) using gh-pages.
 
